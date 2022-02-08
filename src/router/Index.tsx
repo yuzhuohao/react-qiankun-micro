@@ -1,7 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import { RouteConfig } from '@/types/common'
-import { Components } from "antd/lib/date-picker/generatePicker";
 
 
 type Props = {

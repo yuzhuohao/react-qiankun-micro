@@ -39,7 +39,7 @@ module.exports = {
 		// 	minChunks: Infinity,
 		// }),
 		new HtmlWebpackPlugin({
-			title: 'reac-ts-qiankun-app',
+			title: 'react-qiankun-micro',
 			template: path.resolve(__dirname, './template/index.html'),
 			filename: 'index.html',
 			// chunks: ['main', 'vendor'],

@@ -9,7 +9,7 @@ import {
     UserOutlined,
 } from '@ant-design/icons';
 import Logo from '@components/logo/Index'
-import './Index.less'
+import './index.less'
 
 const menuList = [
     {

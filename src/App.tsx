@@ -10,6 +10,7 @@ const App: React.FC = () => {
 	const { message } = loadLocale('zh-CN');
 	return (
 		<IntlProvider locale="zh-CN" messages={message}>
+			子应用
 			<BrowserRouter>
 				<RouterView routes={routes} />
 			</BrowserRouter>

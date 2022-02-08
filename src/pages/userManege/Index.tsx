@@ -52,7 +52,7 @@ const data = [
 const User: React.FC = () => {
 	return (
 		<div className="hello">
-			<div className="greeting">
+			<div>
 				<FormattedMessage id="sender" />
 			</div>
 			<Table columns={columns} dataSource={data} />

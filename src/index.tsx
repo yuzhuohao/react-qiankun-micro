@@ -1,8 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
-import RouterView from '@router/Index';
-import { routes } from '@router/config';
 import App from './App';
 import 'antd/dist/antd.css';
 import './public_path';
