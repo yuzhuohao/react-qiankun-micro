@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import 'antd/dist/antd.css';
 import './public_path';
+import i18n from 'i18next';
 
 function render(props: any) {
 	const { container } = props;
@@ -29,7 +30,8 @@ export async function mount(props: any) {
 	render(props);
 	props.onGlobalStateChange((state: any, prev: any) => {
 		console.log('子应用监听');
-		console.log(state, prev);
+		// console.log(state)
+		i18n.changeLanguage(state.language);
 	});
 }
 

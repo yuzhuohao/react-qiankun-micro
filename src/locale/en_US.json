@@ -1,0 +1,18 @@
+{
+	"express-number": "Express Number",
+	"express-number-tip": "Please input addressee express number",
+	"addressee": "Addressee",
+	"addressee-tip": "Please input addressee",
+	"add": "Add",
+	"sender": "Sender",
+	"reset": "Reset",
+	"search": "Search",
+	"create-info": "Create Infomation",
+	"update-info": "Update Infomation",
+	"edit": "Edit",
+	"name": "Name",
+	"age": "Age",
+	"address": "Address",
+	"tags": "Tags",
+	"action": "Action"
+}

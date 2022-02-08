@@ -1,29 +1,6 @@
 import * as React from 'react';
 import { Table, Tag, Space } from 'antd';
-import { FormattedMessage } from 'react-intl';
-
-const columns = [
-	{
-		title: 'Name',
-		dataIndex: 'name',
-		key: 'name',
-	},
-	{
-		title: 'Age',
-		dataIndex: 'age',
-		key: 'age',
-	},
-	{
-		title: 'Address',
-		dataIndex: 'address',
-		key: 'address',
-	},
-	{
-		title: 'Tags',
-		key: 'tags',
-		dataIndex: 'tags',
-	},
-];
+import { useTranslation } from 'react-i18next';
 
 const data = [
 	{
@@ -50,11 +27,34 @@ const data = [
 ];
 
 const User: React.FC = () => {
+	const { t } = useTranslation();
+
+	const columns = [
+		{
+			title: t('name'),
+			dataIndex: 'name',
+			key: 'name',
+		},
+		{
+			title: t('age'),
+			dataIndex: 'age',
+			key: 'age',
+		},
+		{
+			title: t('address'),
+			dataIndex: 'address',
+			key: 'address',
+		},
+		{
+			title: t('tags'),
+			key: 'tags',
+			dataIndex: 'tags',
+		},
+	];
+
 	return (
 		<div className="hello">
-			<div>
-				<FormattedMessage id="sender" />
-			</div>
+			<h1>{t('addressee-tip')}</h1>
 			<Table columns={columns} dataSource={data} />
 		</div>
 	);

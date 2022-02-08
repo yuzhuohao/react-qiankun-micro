@@ -9,6 +9,7 @@
 		"moduleResolution": "node",
 		"allowSyntheticDefaultImports": true,
 		"baseUrl": ".",
+		"resolveJsonModule": true,
 		"paths": {
 			//别名配置
 			"@/*": ["src/*"],
