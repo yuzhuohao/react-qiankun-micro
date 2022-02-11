@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Table, Tag, Space } from 'antd';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 
 const data = [
 	{
@@ -54,7 +54,8 @@ const User: React.FC = () => {
 
 	return (
 		<div className="hello">
-			<h1>{t('addressee-tip')}</h1>
+			{/* <h1>{t('addressee-tip')}</h1> */}
+			<Trans>addressee-tip</Trans>
 			<Table columns={columns} dataSource={data} />
 		</div>
 	);

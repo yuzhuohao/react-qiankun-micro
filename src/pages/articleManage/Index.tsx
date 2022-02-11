@@ -1,6 +1,10 @@
 import * as React from 'react';
 import { Table, Tag, Space } from 'antd';
-import { useTranslation } from 'react-i18next';
+import {
+	useTranslation,
+	withTranslation,
+	WithTranslation,
+} from 'react-i18next';
 
 const data = [
 	{
@@ -26,9 +30,7 @@ const data = [
 	},
 ];
 
-const Article: React.FC = () => {
-	const { t } = useTranslation();
-
+const Article: React.FC<WithTranslation> = ({ t, i18n }) => {
 	const columns = [
 		{
 			title: t('name'),
@@ -87,4 +89,4 @@ const Article: React.FC = () => {
 	);
 };
 
-export default Article;
+export default withTranslation()(Article);
