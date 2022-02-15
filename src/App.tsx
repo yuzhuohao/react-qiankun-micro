@@ -8,7 +8,7 @@ import './locale/index';
 
 const App: React.FC = () => {
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename="/react-qiankun-micro">
 			<RouterView routes={routes} />
 		</BrowserRouter>
 	);

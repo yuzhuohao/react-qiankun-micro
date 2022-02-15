@@ -26,18 +26,6 @@ const Index: React.FC<PageProps> = (props) => {
     const [collapsed, setCollapsed] = React.useState(false);
     const [current, setCurrent] = React.useState('');
 
-    // React.useEffect(() => {
-    //     if (props.location.pathname == "/") {
-    //         // 挂载与更新时触发
-    //         setCurrent(menuList[0].path);
-    //         props.history.push(menuList[0].path);
-    //     }
-    //     setCurrent("/" + props.location.pathname.split("/")[1]);
-    //     return () => {
-    //         // 卸载时触发
-    //     }
-    // })
-
     function toggle() {
         setCollapsed(!collapsed,);
     };

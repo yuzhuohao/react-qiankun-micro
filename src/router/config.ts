@@ -5,15 +5,15 @@ import { RouteConfig } from '@/types/common';
 
 export const routes: RouteConfig[] = [
 	{
-		path: '/react-qiankun-micro/login',
+		path: '/login',
 		component: Login,
 	},
 	{
-		path: '/react-qiankun-micro/article',
+		path: '/article',
 		component: Article,
 	},
 	{
-		path: '/react-qiankun-micro/user',
+		path: '/user',
 		component: User,
 	},
 ];
